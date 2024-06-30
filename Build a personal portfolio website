@@ -1,0 +1,211 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#welcome-section">Welcome</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#profile-link" target="_blank">Profile</a></li>
+    </ul>
+</nav>
+
+<section id="welcome-section">
+    <div class="welcome-content">
+        <h1>Welcome to My freeCodeCamp Portfolio!</h1>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="project-tile">
+        <h2>Build a survey form</h2>
+        <p>It's designed to collect user input to improve service based on their preferences and feedback. The form is structured to ensure required fields are filled and includes various input types (text, email, number, select, radio buttons, checkboxes, and textarea) to accommodate different types of user responses. The styling ensures a clean and user-friendly interface with responsive design principles applied.
+
+</p>
+        <a href="https://github.com/OkuDanny/Libary/blob/main/build-a-survey-form.txt" class="project-link">View Project</a>
+    </div>
+
+    <div class="project-tile">
+        <h2>Build a project landing page</h2>
+        <p>This setup creates a structured, visually appealing website that introduces a product, showcases its features with a video, and allows users to contact the company via email. The responsive design ensures usability across different devices.</p>
+        <a href="https://github.com/OkuDanny/Libary/blob/main/build-a-product-landing-page.txt" class="project-link">View Project</a>
+    </div>
+
+    <div class="project-tile">
+        <h2>Build a technical documentation page</h2>
+        <p>This setup provides a structured and visually appealing technical documentation page, suitable for learning and reference purposes. It ensures readability with clear section divisions and code highlighting. The responsive design ensures usability across different devices.</p>
+        <a href="https://github.com/OkuDanny/Libary/blob/main/build-a-technical-documentation-page.txt" class="project-link">View Project</a>
+    </div>
+</section>
+
+<a id="profile-link" href="https://github.com/OkuDanny/" target="_blank">Visit my GitHub Profile</a>
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar {
+    background-color: #343a40;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.welcome-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.welcome-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.project-tile {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-5px);
+}
+
+.project-tile h2 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.project-tile p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-tile .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-tile .project-link:hover {
+    background-color: #0056b3;
+}
+
+#profile-link {
+    display: inline-block;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#profile-link:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #navbar ul li a {
+        padding: 10px;
+    }
+
+    .project-tile {
+        padding: 20px;
+    }
+
+    .project-tile h2 {
+        font-size: 2em;
+    }
+
+    .project-tile p {
+        font-size: 1em;
+    }
+}
+
+
+** end of undefined **
+
