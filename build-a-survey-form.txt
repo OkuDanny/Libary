@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial0scale=1.0">
+  <title>Survey Form</title>
+  <link rel-"stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the form  below to help us improve our service.</p>
+
+<form id="survey-form">
+  
+  <label id="name-label" for="name">Name:</label>
+  <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+  <label id="email-label" for="email">Email:</label>
+  <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+  <label id="number-label" for="number">Age:</label>
+  <input id="number" type="number" name="age" placeholder="Enter your age" min="13" max="120" required>
+
+  <label for="dropdown">Which option best describes you?</label>
+  
+  <select id="dropdown" name="user-type">
+    <option value="student">Student</option>
+    <option value="professional">Professional</option>
+    <option value="retired">Retired</option>
+  </select>
+
+  <fieldset>
+    <legend>Choose your preferred contact method:</legend>
+    <label><input type="radio" name="contact method" value="email" required> Email</label>
+    <label><input type="radio" name="contact method" value="phone"> Phone</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Select the services you're interested in:</legend>
+    <label><input type="checkbox" name="service" value="web development"> Web Development</label>
+    <label><input type="checkbox" name="service" value="app development"> App Development</label>
+    <label><input type="checkbox" name="service" value="seo"> SEO</label>
+  </fieldset>
+
+  <label for="comments">Any additional comments?</label>
+  <textarea id="comments" name="comments" rows="4" cols="50" palceholder="Enter your comments here..."></textarea>
+
+  <button id="submit" type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#survey-form {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vh;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+#submit {
+  display: block;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+#title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#description {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+** end of undefined **
+
